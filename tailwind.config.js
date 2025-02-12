@@ -11,6 +11,16 @@ export default {
     extend: {
       fontFamily:{
         'sans': ['Inter', 'sans-serif']
+      },
+      animation: {
+        typewriter: "typewriter 2s steps(11) forwards"
+      },
+      keyframes: {
+        typewriter: {
+          to: {
+            left: "100%"
+          }
+        }
       }
     },
   },

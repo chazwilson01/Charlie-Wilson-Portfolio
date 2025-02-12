@@ -2,22 +2,28 @@ import ProjectCard from "./ProjectCard";
 
 const works = [
     {
-      imgSrc: '/images/Pathfinder.png',
+      imgSrc: '/Charlie-Wilson-Portfolio/images/MovieSwiper.png',
+      title: 'Movie Swiper',
+      tags: ["MERN", 'APIs', 'Fullstack Development'],
+      projectLink: "https://movie-swiper-59a03.web.app/"
+    },
+    {
+      imgSrc: '/Charlie-Wilson-Portfolio/images/Pathfinder.png',
       title: 'Pathfinding App',
       tags: ['React', 'Algorithms'],
       projectLink: 'https://chazwilson01.github.io/PathfindingApp/'
     },
     {
-      imgSrc: '/images/Quiz.png',
+      imgSrc: '/Charlie-Wilson-Portfolio/images/Quiz.png',
       title: 'Web Guessing Game',
       tags: ['Vue', 'Development', 'FireBase'],
-      projectLink: 'https://github.com/chazwilson01/MacQuiz'
+      projectLink: 'https://macquiz-567dd.web.app/#/'
     },
     {
-      imgSrc: '/images/Tackle.png',
+      imgSrc:'/Charlie-Wilson-Portfolio/images/Tackle.png',
       title: 'Tackle Probability',
       tags: ['Machine Learning', 'R'],
-      projectLink: 'Projects/TackleProb.html'
+      projectLink: '/Charlie-Wilson-Portfolio/Projects/TackleProb.html'
     },
 
   ];

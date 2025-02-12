@@ -3,42 +3,42 @@ import SkillCard from "./SkillCard";
 
 const skillItem = [
   {
-    imgSrc: '/images/java-icon.svg',
+    imgSrc: '/Charlie-Wilson-Portfolio/images/java-icon.svg',
     label: 'Java',
     desc: 'Programming'
   },
   {
-    imgSrc: '/images/aws-svgrepo-com.svg',
+    imgSrc: '/Charlie-Wilson-Portfolio/images/aws-svgrepo-com.svg',
     label: 'AWS',
     desc: 'Database'
   },
   {
-    imgSrc: '/images/javascript.svg',
+    imgSrc: '/Charlie-Wilson-Portfolio/images/javascript.svg',
     label: 'JavaScript',
     desc: 'Interaction'
   },
   {
-    imgSrc: '/images/python-icon.svg',
+    imgSrc: '/Charlie-Wilson-Portfolio/images/python-icon.svg',
     label: 'Python',
     desc: 'Programming'
   },
   {
-    imgSrc: '/images/sql-database-generic-svgrepo-com.svg',
+    imgSrc: '/Charlie-Wilson-Portfolio/images/sql-database-generic-svgrepo-com.svg',
     label: 'SQL',
     desc: 'Database'
   },
   {
-    imgSrc: '/images/vuejs-icon.svg',
+    imgSrc: '/Charlie-Wilson-Portfolio/images/vuejs-icon.svg',
     label: 'Vue',
     desc: 'Framework'
   },
   {
-    imgSrc: '/images/react.svg',
+    imgSrc: '/Charlie-Wilson-Portfolio/images/react.svg',
     label: 'React',
     desc: 'Framework'
   },
   {
-    imgSrc: '/images/tailwindcss.svg',
+    imgSrc: '/Charlie-Wilson-Portfolio/images/tailwindcss.svg',
     label: 'TailwindCSS',
     desc: 'User Interface'
   },

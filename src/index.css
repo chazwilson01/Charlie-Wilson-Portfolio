@@ -6,58 +6,65 @@ html {
   scroll-behavior: smooth;
 }
 
-body{
-  @apply bg-zinc-900 text-zinc-50 h-[200vh]
-
+body {
+  @apply bg-zinc-900 text-zinc-50 min-h-screen;
 }
+
+/* Animation Keyframes
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply Animation */
+/* .animate-fade-in {
+  animation: fadeIn 1.5s ease-out;
+} */
+
+/* Text Shadow */
+/* .text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+} */ 
 
 /*
 Components
 */
-/* .material-symbols-rounded {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
-} */
 .menu-btn {
-  @apply w-10 h-10 grid place-items-center bg-zinc-50/10 rounded-xl ring-inset ring-1 ring-zinc-50/[0.02] backdrop-blur-2xl hover:bg-zinc-50/15 transition-[transform,shadow] active:scale-95
+  @apply w-10 h-10 grid place-items-center bg-zinc-50/10 rounded-xl ring-inset ring-1 ring-zinc-50/[0.02] backdrop-blur-2xl hover:bg-zinc-50/15 transition-[transform,shadow] active:scale-95;
 }
 
 .navbar {
-  @apply absolute top-full mt-2 right-0 min-w-40 p-2
-  bg-zinc-50/10 rounded-2xl ring-inset ring-1 ring-zinc-50/5
-  scale-90 isolate blur-sm opacity-0 invisible transition-[opacity,transform,filter] md:static md:flex md:items-center md:mt-0 md:opacity-100 md:blur-0
-  md:visible md:scale-100 backdrop-blur-2xl
-
+  @apply absolute top-full mt-2 right-0 min-w-40 p-2 bg-zinc-50/10 rounded-2xl ring-inset ring-1 ring-zinc-50/5 scale-90 isolate blur-sm opacity-0 invisible transition-[opacity,transform,filter] md:static md:flex md:items-center md:mt-0 md:opacity-100 md:blur-0 md:visible md:scale-100 backdrop-blur-2xl;
 }
 
 .navbar.active {
-  @apply opacity-100 scale-100 blur-0 visible
+  @apply opacity-100 scale-100 blur-0 visible;
 }
 
 .nav-link {
-  @apply grid items-center h-9 px-4 text-sm font-medium
-  tracking-wide text-zinc-50/50 hover:text-zinc-50 transition-colors
+  @apply grid items-center h-9 px-4 text-sm font-medium tracking-wide text-zinc-50/50 hover:text-zinc-50 transition-colors;
 }
 
 .nav-link.active {
-  @apply text-zinc-900 duration-500
+  @apply text-zinc-900 duration-500;
 }
 
 .navbar .active-box {
-  @apply absolute bg-zinc-50 rounded-lg 
-  -z-10 transition-[top,left] duration-500
+  @apply absolute bg-zinc-50 rounded-lg -z-10 transition-[top,left] duration-500;
 }
 
 .btn {
-  @apply max-w-max h-9 flex items-center gap-2 px-4 
-  rounded-xl font-medium text-sm ring-1 ring-zinc-50/5 ring-inset transition-[background-color]
+  @apply max-w-max h-9 flex items-center gap-2 px-4 rounded-xl font-medium text-sm ring-1 ring-zinc-50/5 ring-inset transition-[background-color];
 }
 
 .btn-secondary {
-  @apply bg-zinc-50 text-zinc-900 active:bg-zinc-50/80
+  @apply bg-zinc-50 text-zinc-900 active:bg-zinc-50/80;
 }
 
 .material-symbols-rounded {
@@ -66,7 +73,7 @@ Components
 }
 
 .container {
-  @apply px-4 mx-auto lg:px-8 xl:max-w-6xl
+  @apply px-4 mx-auto lg:px-8 xl:max-w-6xl;
 }
 
 .img-box {
@@ -76,60 +83,112 @@ Components
 .img-cover {
   @apply w-full h-full object-cover
 }
-
-.headline-1{
-  @apply max-w-max;
-  background: -webkit-linear-gradient(0deg, #fafafa, #a1a1aa);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
+.headline-1 {
+  @apply max-w-max mx-auto; /* Center text within container */
+  /* background: -webkit-linear-gradient(0deg, #fafafa, #a1a1aa);
+  -webkit-background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
 }
 
 .headline-2,
-.headline-1{
-  @apply text-4xl leading-tight font-semibold lg:text-[55px]
-  lg:leading-[1.15]
+.headline-1 {
+  @apply text-4xl leading-tight font-semibold lg:text-[55px] lg:leading-[1.15];
 }
 
 .headline-2 {
-  @apply text-3xl lg:text-4xl lg:leading-tight font-semibold
-}
-.btn .material-symbols-rounded {
-  @apply text-[18px]
+  @apply text-3xl lg:text-4xl lg:leading-tight font-semibold;
 }
 
-.btn:has( .material-symbols-rounded) {
-  @apply pr-3
+.btn .material-symbols-rounded {
+  @apply text-[18px];
+}
+
+.btn:has(.material-symbols-rounded) {
+  @apply pr-3;
 }
 
 .btn-primary {
-  @apply h-11 bg-sky-400 text-zinc-950 hover:bg-sky-300 active:bg-sky-400
+  @apply h-11 bg-sky-400 text-zinc-950 hover:bg-sky-300 active:bg-sky-400;
 }
 
 .btn-outline {
-  @apply h-11 bg-zinc-800 hover:bg-zinc-700 active:bg-zinc-800
+  @apply h-11 bg-zinc-800 hover:bg-zinc-700 active:bg-zinc-800;
 }
 
 .section {
-  @apply pt-20 lg:pt-32
+  @apply pt-20 lg:pt-32;
 }
 
-.title-1{
-  @apply text-[22px] font-normal
+.title-1 {
+  @apply text-[22px] font-normal;
 }
 
 .label {
-  @apply block text-zinc-200 text-sm font-normal mb-2
+  @apply block text-zinc-200 text-sm font-normal mb-2;
 }
 
 .text-field {
-  @apply block outline-none w-full px-3 py-3 text-sm bg-zinc-800 rounded-xl ring-1 ring-inset ring-transparent transition-shadow hover:ring-zinc-50/5 focus:ring-sky-400 
-  focus:ring-2
+  @apply block outline-none w-full px-3 py-3 text-sm bg-zinc-800 rounded-xl ring-1 ring-inset ring-transparent transition-shadow hover:ring-zinc-50/5 focus:ring-sky-400 focus:ring-2;
 }
+
 .textfield::placeholder {
-  @apply text-zinc-400
+  @apply text-zinc-400;
 }
 
 .reveal-up {
-  @apply translate-y-20 opacity-0
+  @apply translate-y-20 opacity-0;
+}
+
+/* Typing animation */
+
+.headline-1 {
+  display: inline-block;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+    visibility: hidden; /* Completely hides the text initially */
+  }
+  to {
+    width: 100%;
+    visibility: visible; /* Reveals text during typing */
+  }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+.typing-effect {
+  font-family: "Oswald";
+  font-size: 2ch;
+  display: inline-block;
+  white-space: nowrap; /* Prevents text wrapping */
+  overflow: hidden; /* Hides overflowing text */
+  border-right: 2px solid white; /* Cursor effect */
+  color: white; /* Text color */
+  width: 0; /* Start with no width */
+  visibility: hidden; /* Initially hidden to prevent rendering */
+  animation: typing 2s steps(30, end) .25s forwards, /* Delay typing by 1s */
+             blink 0.75s step-end infinite;
+  animation-fill-mode: forwards; /* Ensures final state persists */
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-delayed {
+  opacity: 0; /* Hide initially */
+  animation: fadeIn 1s ease-out forwards; /* Fade in */
+  animation-delay: 2.5s; /* Matches the typing animation duration */
 }

@@ -49,10 +49,10 @@ const ProjectCard = ({
     )
 }
 
-ProjectCard.PropTypes = {
+ProjectCard.propTypes = {
     imgsrc: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
-    tags: PropTypes.string.isRequired,
+    tags: PropTypes.array.isRequired,
     projectLink: PropTypes.string,
     classes: PropTypes.string
 }
