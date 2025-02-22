@@ -151,7 +151,7 @@ Components
     visibility: hidden; /* Completely hides the text initially */
   }
   to {
-    width: 100%;
+    width: min-content; /* Makes sure text only takes up as much space as needed */
     visibility: visible; /* Reveals text during typing */
   }
 }
@@ -161,18 +161,17 @@ Components
 }
 
 .typing-effect {
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-size: 2ch;
-  display: inline-block;
   white-space: nowrap; /* Prevents text wrapping */
   overflow: hidden; /* Hides overflowing text */
   border-right: 2px solid white; /* Cursor effect */
   color: white; /* Text color */
   width: 0; /* Start with no width */
-  visibility: hidden; /* Initially hidden to prevent rendering */
-  animation: typing 2s steps(30, end) .25s forwards, /* Delay typing by 1s */
+  visibility: hidden; /* Initially hidden */
+  display: inline-block; /* Ensures text behaves properly */
+  animation: typing 2s steps(30, end) 0.25s forwards,
              blink 0.75s step-end infinite;
-  animation-fill-mode: forwards; /* Ensures final state persists */
 }
 
 

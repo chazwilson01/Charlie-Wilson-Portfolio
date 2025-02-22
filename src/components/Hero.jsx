@@ -7,7 +7,7 @@ const Hero = () => {
       <div className="container text-center">
         <div className="relative">
           {/* "Looking for work" badge */}
-          <div className="flex items-center justify-center gap-1.5 text-zinc-100 text-xs sm:text-sm tracking-wide fade-in-delayed">
+          <div className="flex items-center justify-center gap-1.5 text-zinc-100 text-xs sm:text-sm tracking-wide fade-in-delayed w-[100%]">
             <span className="relative w-2 h-2 rounded-full bg-emerald-400">
               <span className="absolute inset-0 rounded-full bg-emerald-400 animate-ping"></span>
             </span>
@@ -15,8 +15,10 @@ const Hero = () => {
           </div>
 
           {/* Typing animation for the title */}
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mt-5 mb-6 mx-auto text-shadow leading-snug px-4 inline-block">
-            <span className="typing-effect">Charlie Wilson's Portfolio</span>
+          <h2 className="text-2xl md:text-5xl font-bold w-full mt-5 mb-6 mx-auto text-shadow">
+            <span className="typing-effect pb-4">
+              Charlie Wilson's Portfolio
+            </span>
           </h2>
 
           {/* Buttons */}
