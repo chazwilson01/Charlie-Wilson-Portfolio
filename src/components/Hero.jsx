@@ -15,7 +15,7 @@ const Hero = () => {
           </div>
 
           {/* Typing animation for the title */}
-          <h2 className="text-2xl md:text-4xl lg:text-6xl font-bold mt-5 mb-6 mx-auto text-shadow leading-snug px-4 inline-block">
+          <h2 className="text-xl sm:text-2xl md:text-4xl lg:text-6xl font-bold mt-5 mb-6 mx-auto text-shadow leading-snug px-4 inline-block">
             <span className="typing-effect pb-4">Charlie Wilson's Portfolio</span>
           </h2>
 
