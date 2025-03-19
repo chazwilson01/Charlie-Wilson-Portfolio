@@ -13,6 +13,14 @@ const works = [
       tags: ['React', 'Algorithms'],
       projectLink: 'https://chazwilson01.github.io/PathfindingApp/'
     },
+    
+    {
+      imgSrc: '/Charlie-Wilson-Portfolio/images/MMP.png',
+      title: 'March Madness Predictor',
+      tags: ["Nueral Networks", 'Tensorflow', 'Data Processing'],
+      projectLink: "https://marchmadnesspredictor.streamlit.app/"
+    },
+
     {
       imgSrc: '/Charlie-Wilson-Portfolio/images/Quiz.png',
       title: 'Web Guessing Game',
