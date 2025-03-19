@@ -17,7 +17,7 @@ const works = [
     {
       imgSrc: '/Charlie-Wilson-Portfolio/images/MMP.png',
       title: 'March Madness Predictor',
-      tags: ["Nueral Networks", 'Tensorflow', 'Data Processing'],
+      tags: ["Machine Learning", 'Tensorflow', 'Data Processing'],
       projectLink: "https://marchmadnesspredictor.streamlit.app/"
     },
 
